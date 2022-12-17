@@ -22,9 +22,9 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        Person p1 = new Person("Cоловьёв");
-        Person p2 = new Person("", "Бобров", "");
-        Person p3 = new Person("Николай", "Романов", "Александрович");
+        Person p1 = new Person("Евгений");
+        Person p2 = new Person("", "Юрлов", "");
+        Person p3 = new Person("Евгений", "Дмитриевич", "Юрлов");
 
         System.out.println(p1.getFio());
         System.out.println(p2.getFio());

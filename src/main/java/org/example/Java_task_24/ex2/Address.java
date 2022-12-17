@@ -3,7 +3,13 @@ package org.example.Java_task_24.ex2;
 import java.util.StringTokenizer;
 
 public class Address {
-    private String country, region, city, street, house, housing, flat;
+    private final String country;
+    private String region;
+    private String city;
+    private String street;
+    private String house;
+    private String housing;
+    private String flat;
 
     public Address(String stringToParse, boolean multiDivider){
         if(stringToParse == null) throw new NullPointerException();

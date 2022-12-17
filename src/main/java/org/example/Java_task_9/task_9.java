@@ -14,7 +14,7 @@ class MyApp extends JFrame {
     int WINDOW_WIDTH = 600;
     int WINDOW_HEIGHT = 600;
     String background_image_path;
-    String animation_images_path = "Java_task_8/frames/";
+    String animation_images_path = "src/main/java/org/example/Java_task_8/frames";
     int method;
 
     // Init

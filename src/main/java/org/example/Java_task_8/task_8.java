@@ -9,13 +9,14 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.io.File;
+import java.util.Objects;
 
 // App class
 class MyApp extends JFrame {
     int WINDOW_WIDTH = 600;
     int WINDOW_HEIGHT = 600;
     String background_image_path;
-    String animation_images_path = "Java_task_8/frames/";
+    String animation_images_path = "src/main/java/org/example/Java_task_8/frames";
     int method;
 
     // Init
@@ -161,7 +162,7 @@ class MyApp extends JFrame {
 
     void animate(String frames_path, Graphics2D g) {
         File dir = new File(frames_path);
-        for (File file : dir.listFiles()) {
+        for (File file : Objects.requireNonNull(dir.listFiles())) {
             Image frame = Toolkit.getDefaultToolkit().getImage(file.getPath());
             g.drawImage(frame, 0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, this);
             try { Thread.sleep(500); } catch (InterruptedException e) {}
